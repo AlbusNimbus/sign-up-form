@@ -1,0 +1,79 @@
+@mixin fcc
+    display: flex
+    justify-content: center
+    align-items: left
+
+
+.main
+    @include fcc
+    flex-direction: column
+    width: 60%
+    font-family: 'Poppins', sans-serif
+    background-color: rgba(122, 198, 255,0.7)
+
+
+
+.disclaimer-container
+    @include fcc
+    flex-direction: column
+    width: 60%
+    font-weight: 600
+    margin: 0 0 1rem 1rem
+    p   
+        line-height: 1.4
+    p:last-child
+        margin-top:1rem
+        
+
+
+.form-container
+    display: flex
+    width: 100%
+    height:40%
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5)
+    font-weight: 800
+    background-color: rgba(0,0,0,0.4)
+    font-family:'Poppins', sans-serif
+
+
+form
+    display: grid
+    width: 80%
+    grid-template-columns: repeat(2,1fr)
+    margin-left: 1rem
+    font-family:'Poppins', sans-serif
+    
+
+[class^="box-"]
+    display: flex
+    flex-direction: column
+    justify-content: center
+    
+    width: 80%
+    gap: 0.5rem
+
+input
+    padding: 1rem
+    background-color: rgba(255,255,255,0.5)
+    border-radius: 10px
+    font-size: 1rem
+
+
+.buttons-container
+    margin: 1rem 0 0 1rem
+    height: auto
+    button
+        width: 200px
+        height: auto
+        background-color: #F4A259
+        font-family:'Poppins', sans-serif
+        border-radius: 10px
+        font-size: 1rem
+        padding: 1rem
+        &:active
+            background-color: rgba( 244,162,89,0.8)
+    p
+        font-family: 'Poppins', sans-serif
+        margin-top:1rem
+        a
+            color: #F4A259

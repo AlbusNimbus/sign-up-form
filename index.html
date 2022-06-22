@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="./assets/Norse-Bold.otf" rel='stylesheet' type='text/css'>
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+        </style> 
+    <script src="script.js" defer>
+    </script>
+
+    <title>Sign Up</title>
 </head>
+
 <body>
-    <button> buttor</button>
-    yes
+    <div class="splash-container">
+        <div class="logo-container">
+            <div class="logo">
+            </div>
+            <p>ODIN</p>
+        </div>
+    </div>
+    <div class="splash-footer">Photo by <a
+            href="https://unsplash.com/@aarsoph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kristijan
+            Arsov</a> on <a
+            href="https://unsplash.com/s/photos/norse?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+    </div>
+    <div class="main">
+        <div class="disclaimer-container">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. </p>
+            <p>Sign up now to get started.</p>
+            <p>You know you want to.</p>
+        </div>
+        <div class="form-container">
+            <form action="#" method="post">
+                <div class="box-1">
+                    <label for="first_name" id="first_name_label">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Ragnar" required>
+                </div>
+                <div class="box-2">
+                    <label for="last_name" id="last_name_label">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Lothbrok" required>
+                </div>
+                <div class="box-3">
+                    <label for="email" id="user_email_label">Email:</label>
+                    <input type="email" id="user_email" name="email" placeholder="lothbrokr@valhalla.com" required>
+                </div>
+                <div class="box-4">
+                    <label for="phone_number" id="user_phone_number_label">Phone Number:</label>
+                    <input type="tel" id="user_phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+                <div class="box-5">
+                    <label for="user_password" id="user_password_label">Password:</label>
+                    <input type="password" id="user_password" name="password" required>
+                </div>
+                <div class="box-6">
+                    <label for="confirm_password" id="confirm_password_label">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+            
+        </div>
+        <div class="buttons-container">
+            <button type="submit" value="Submit" id="create-account-btn">Create Account</button>
+            <p>Already have an account? <a href="http://localhost">Log in</a> </p>
+        </form>
+        </div>
+    </div>
 </body>
+
 </html>

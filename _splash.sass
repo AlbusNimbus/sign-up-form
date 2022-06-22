@@ -1,0 +1,49 @@
+.splash-container
+    display: flex
+    overflow: hidden
+    position: relative
+    height: 100vh
+    width: 40%
+    background-image: url(./assets/unsplash.jpg)
+    background-size: max(100vh,120%)
+
+.logo-container
+    display: flex
+    align-items: center
+    justify-content: center
+    align-self: center
+    transform: translate(0,0.4rem) 
+    background: rgba(0,0,0,0.5)
+    width: 100%
+    height: 40%
+    .logo
+        width: 30%
+        height: 100%
+        background-size: 100%
+        background-repeat: no-repeat
+        background-position: center
+        background-image: url(./assets/odin-lined.png)
+    p
+        font-family: Norse-Bold
+        color: white
+        font-size: min(40vw,40vh,200px)
+
+
+.splash-footer
+    font-family: "Norse-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif
+    position: absolute
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    width: 40%
+    bottom: 0
+    color: rgba(255, 255, 255, 0.5)
+    font-size: 0.8rem
+    a
+        font-size: 1rem
+        color: gray
+        text-decoration: none
+
+        &:hover
+            color: #F4A259
+        
